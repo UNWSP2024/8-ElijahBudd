@@ -1,3 +1,5 @@
+# Elijah Budd
+#3/18/2025
 # Program #2: Word Separator
 # Write a program that accepts as input a sentence in which all of the words are run together, 
 # but the first character of each word is uppercase.  
@@ -11,13 +13,20 @@ def word_separator(sentence):
 
     new_sentence = ""
     #    Add your logic here
+    new_sentence = sentence[0]
+
+    for i in range(1, len(sentence)):
+        char = sentence[i]
+
+        if char.isupper():
+            new_sentence += " " + char.lower()
+        else:
+            new_sentence += char
 
     return new_sentence.strip()
 
-# Example usage
+sentence = input("Enter a sentence: ")
 
-sentence = "StopAndSmellTheRoses"
+result = word_separator(sentence)
 
-new_sentence = word_separator(sentence)
-
-print(new_sentence)
+print(result)
