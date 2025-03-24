@@ -1,3 +1,5 @@
+# Elijah bUdd
+# 3/17/2025
 # Program #1: Initials
 # Write a program that gets a string containing a person's first, middle, and last names, 
 # and displays their first, middle, and last initials.  
